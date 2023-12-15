@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import { useEffect } from "react";
 import Cursor from "./component/cursor/cursor";
-import { cursorJs } from "./component/cursor/cursorJs";
+import { cursorJs } from "./component/cursor/cursorJs.js";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 import "./App.css";
 import Navbar from "./component/Navbar/Navbar";
