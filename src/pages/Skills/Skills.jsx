@@ -1,14 +1,34 @@
-/* eslint-disable react/no-unknown-property */
+import { motion } from "framer-motion";
 import "./Skills.css";
-import { FaHtml5 } from "react-icons/fa";
-import htmlLogo from "./../../assets/html.png";
-import cssLogo from "./../../assets/css-3.png";
-
+import SkillsCard from "../../component/SkillsCard/SkillsCard";
+import { SkillsInfo } from "../../data/data";
 const Skills = () => {
   return (
     <div className="skills">
       <div className="h1-container-skills">
-        <h1>Skills.</h1>
+        <motion.h1
+          initial={{
+            y: "100%",
+            opacity: "0",
+          }}
+          transition={{
+            duration: 0.5,
+            delay: 0.5,
+          }}
+          whileInView={{
+            y: 0,
+            opacity: "1",
+          }}
+        >
+          Skills.
+        </motion.h1>
+      </div>
+      <div className="skills-container">
+        <div className="skills-inner-container">
+          {SkillsInfo.map((info, idx) => {
+            return <SkillsCard Logo={info.Logo} name={info.name} key={idx} />;
+          })}
+        </div>
       </div>
     </div>
   );

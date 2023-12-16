@@ -2,21 +2,95 @@
     width: 100%;
     height: 100vh;
     font-family: 'Zeyada', cursive;
-    box-sizing: border-box;
     padding-top: 2rem;
+    box-sizing: border-box;
 }
 
 .h1-container-skills {
     width: 100%;
+    height: 6rem;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+
 }
 
 .skills h1 {
     font-size: 6rem;
 }
 
-.marquee {
+.skills-container {
+    width: 100%;
+    height: calc(100% - 6rem);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-inner-container {
+    width: 85%;
+    padding: 5rem;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Skills Card */
+.skill-card {
+    position: relative;
+    z-index: 999;
+    padding: 0.2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: default;
+    transition: all 0.3s;
+}
+
+.skill-card p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.skill-card img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.skill-card:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:391px) {
+    .skills-inner-container {
+        padding: 5rem 0;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .skill-card {
+        padding: 0.2rem 1rem;
+    }
+}
+
+/* .marquee {
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
@@ -41,9 +115,9 @@
 
 .marquee h1 img {
     width: 3rem;
-}
+} */
 
-@keyframes scroll {
+/* @keyframes scroll {
     0% {
         transform: translateX(0%);
     }
@@ -51,4 +125,4 @@
     100% {
         transform: translateX(calc(-100% - 32px));
     }
-}
+} */
