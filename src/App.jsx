@@ -8,6 +8,7 @@ import Navbar from "./component/Navbar/Navbar";
 import Home from "./pages/home/Home";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import Skills from "./pages/Skills/Skills";
+import Projects from "./pages/Projects/Projects";
 
 const App = () => {
   useEffect(() => {
@@ -31,6 +32,9 @@ const App = () => {
 
       {/* Skills */}
       <Skills />
+
+      {/* Projects */}
+      <Projects />
 
       {/* UppArrow btn */}
       <a href="#home" className="up-btn">
