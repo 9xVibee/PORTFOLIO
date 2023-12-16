@@ -29,7 +29,7 @@
   transform: scale(1);
 }
 
-@media screen and (max-width:391px) {
+@media screen and (max-width:769px) {
 
   .circle,
   .circle2 {

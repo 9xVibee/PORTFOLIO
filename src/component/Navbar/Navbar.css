@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     height: 4rem;
-    z-index: 999;
+    z-index: 9999;
 }
 
 .bitemoji-container {
@@ -197,7 +197,7 @@ span+span {
     }
 }
 
-@media screen and (max-width:391px) {
+@media screen and (max-width:431px) {
     .bitemoji-container {
         width: 3.5rem;
         height: 3.5rem;

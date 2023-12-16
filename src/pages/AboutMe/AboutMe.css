@@ -119,7 +119,7 @@ p {
     display: none;
 }
 
-@media screen and (max-width:391px) {
+@media screen and (max-width:800px) {
     .abt-me {
         display: flex;
         flex-direction: column;
@@ -131,11 +131,50 @@ p {
         height: 50%;
         width: 100%;
         padding-left: 2rem;
+        margin-bottom: -6rem;
     }
 
     .right-abt {
-        height: 50%;
         width: 100%;
+        padding-left: 2rem;
+    }
+
+    .right-abt-p {
+        height: 2.8rem;
+    }
+
+    .last-nothide-p {
+        height: 5rem;
+        line-height: 2.5rem;
+    }
+
+    .left-abt h1 {
+        font-size: 4rem;
+    }
+
+    .left-abt p {
+        font-size: 2rem;
+    }
+
+    .left-abt-h1-container {
+        width: 100%;
+        height: 4.5rem;
+    }
+
+    .left-abt-p-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .right-abt-p p {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width:391px) {
+    .left-abt {
+        margin-bottom: 1rem;
     }
 
     .right-abt-nothide {
@@ -147,32 +186,11 @@ p {
         padding-left: 7px;
     }
 
-    .right-abt-p {
-        height: 2.5rem;
-    }
-
     .last-p {
-        height: 10rem;
+        height: 5rem;
     }
 
     .right-abt-p p {
         font-size: 1.5rem;
-    }
-
-    .left-abt h1 {
-        font-size: 3rem;
-    }
-
-    .left-abt p {
-        font-size: 2rem;
-    }
-
-    .left-abt-h1-container {
-        width: 100%;
-        margin-bottom: -0.5rem;
-    }
-
-    .left-abt-p-container {
-        width: 100%;
     }
 }

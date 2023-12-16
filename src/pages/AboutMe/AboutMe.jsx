@@ -166,7 +166,7 @@ const AboutMe = () => {
           <p>on the internet. I develop exceptional websites and </p>
         </motion.div>
         <motion.div
-          className="right-abt-p"
+          className="right-abt-p last-nothide-p"
           {...abtInfo}
           transition={{
             delay: 1.1,
