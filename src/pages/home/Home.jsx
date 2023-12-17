@@ -7,7 +7,7 @@ const Home = () => {
   const tagAnime = {
     initial: {
       y: "100%",
-      opacity: "0",
+      opacity: 0,
     },
     transition: {
       delay: 0.7,
@@ -15,7 +15,7 @@ const Home = () => {
     },
     whileInView: {
       y: "0%",
-      opacity: "1",
+      opacity: 1,
     },
   };
   // useEffect(() => {
@@ -37,15 +37,15 @@ const Home = () => {
           <motion.h1
             initial={{
               y: "100%",
-              opacity: "0",
+              opacity: 0,
+            }}
+            whileInView={{
+              y: "0%",
+              opacity: 1,
             }}
             transition={{
               delay: 0.5,
               duration: 0.5,
-            }}
-            whileInView={{
-              y: "0%",
-              opacity: "1",
             }}
           >
             Hellowww.

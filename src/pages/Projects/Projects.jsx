@@ -23,17 +23,16 @@ const Projects = () => {
       <div className="project-heading">
         <motion.h1
           initial={{
+            y: 110,
             opacity: 0,
-            y: 50,
           }}
           whileInView={{
-            opacity: 1,
             y: 0,
+            opacity: 1,
           }}
           transition={{
             delay: 0.5,
             duration: 0.5,
-            ease: "linear",
           }}
         >
           Projects
@@ -54,19 +53,77 @@ const Projects = () => {
               <img src={Project1Img} alt="" />
             </div>
             <div className="project-h1-container">
-              <h1>Adidas Clone</h1>
+              <motion.h1
+                initial={{
+                  y: 32,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.5,
+                }}
+              >
+                Adidas Clone
+              </motion.h1>
               <div className="icon-container-project">
-                <img src={HtmlImg} alt="" />
-                <img src={CssImg} alt="" />
+                <motion.img
+                  initial={{
+                    y: 32,
+                    opacity: 0,
+                  }}
+                  whileInView={{
+                    y: 0,
+                    opacity: 1,
+                  }}
+                  transition={{
+                    delay: 0.5,
+                    duration: 0.5,
+                  }}
+                  src={HtmlImg}
+                  alt=""
+                />
+                <motion.img
+                  initial={{
+                    y: 32,
+                    opacity: 0,
+                  }}
+                  whileInView={{
+                    y: 0,
+                    opacity: 1,
+                  }}
+                  transition={{
+                    delay: 0.5,
+                    duration: 0.5,
+                  }}
+                  src={CssImg}
+                  alt=""
+                />
               </div>
             </div>
             <div className="project-details">
-              <p>
+              <motion.p
+                initial={{
+                  y: 32,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.5,
+                }}
+              >
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Inventore tenetur facilis architecto incidunt, totam laborum
                 dolorem ipsum. Vitae fuga labore, odit, provident dolore fugiat
                 recusandae asperiores suscipit eos harum voluptatum?
-              </p>
+              </motion.p>
             </div>
             <div className="btn-container-project">
               <a
@@ -94,21 +151,63 @@ const Projects = () => {
               <img src={Project2Img} alt="" />
             </div>
             <div className="project-h1-container">
-              <h1>Instagram Thread</h1>
-              <div className="icon-container-project">
+              <motion.h1
+                initial={{
+                  y: 32,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.5,
+                }}
+              >
+                Instagram Thread
+              </motion.h1>
+              <motion.div
+                initial={{
+                  y: 32,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.5,
+                }}
+                className="icon-container-project"
+              >
                 <img src={ReactSvg} alt="" />
                 <img src={NodeJs} alt="" />
                 <img src={MongoDb} alt="" />
                 <img src={Express} alt="" />
-              </div>
+              </motion.div>
             </div>
             <div className="project-details">
-              <p>
+              <motion.p
+                initial={{
+                  y: 32,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.5,
+                }}
+              >
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Inventore tenetur facilis architecto incidunt, totam laborum
                 dolorem ipsum. Vitae fuga labore, odit, provident dolore fugiat
                 recusandae asperiores suscipit eos harum voluptatum?
-              </p>
+              </motion.p>
             </div>
             <a
               href="https://github.com/9xVibee/InstagramThreadCloneUsingMERNStack"

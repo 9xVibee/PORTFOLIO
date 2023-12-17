@@ -17,21 +17,21 @@ import { FaXTwitter } from "react-icons/fa6";
 const iconsAnime = {
   initial: {
     y: "100%",
-    opacity: "0",
+    opacity: 0,
   },
   whileInView: {
     y: "0%",
-    opacity: "1",
+    opacity: 1,
   },
 };
 const abtInfo = {
   initial: {
     y: "100%",
-    opacity: "0",
+    opacity: 0,
   },
   whileInView: {
     y: "0%",
-    opacity: "1",
+    opacity: 1,
   },
 };
 
@@ -43,7 +43,7 @@ const AboutMe = () => {
           <motion.h1
             initial={{
               y: "-100%",
-              opacity: "0",
+              opacity: 0,
             }}
             transition={{
               duration: 0.5,
@@ -51,7 +51,7 @@ const AboutMe = () => {
             }}
             whileInView={{
               y: 0,
-              opacity: "1",
+              opacity: 1,
             }}
           >
             About Me?
@@ -61,7 +61,7 @@ const AboutMe = () => {
           <motion.p
             initial={{
               y: "100%",
-              opacity: "0",
+              opacity: 0,
             }}
             transition={{
               delay: 0.7,
@@ -69,7 +69,7 @@ const AboutMe = () => {
             }}
             whileInView={{
               y: "0%",
-              opacity: "1",
+              opacity: 1,
             }}
           >
             (MERN Developer)

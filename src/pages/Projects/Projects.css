@@ -21,7 +21,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    top: 0;
+    top: 1%;
 }
 
 .project-heading h1 {
@@ -98,6 +98,7 @@
 }
 
 .project-h1-container {
+    height: fit-content;
     margin: 0.5rem 0;
     margin-bottom: 1rem;
     width: 100%;
@@ -105,6 +106,7 @@
     justify-content: space-between;
     align-items: center;
     padding-left: 0.5rem;
+    overflow: hidden;
 }
 
 .project-h1-container h1 {
@@ -193,6 +195,17 @@
 @media screen and (max-width:391px) {
     .card-container-project {
         width: 20rem;
+    }
+
+    .project-heading h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .card-container-project {
+        width: 19rem;
     }
 
     .project-heading h1 {

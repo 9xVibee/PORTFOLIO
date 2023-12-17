@@ -5,7 +5,7 @@ const SkillsCard = ({ name, Logo }) => {
   const abtInfo = {
     initial: {
       y: "-100%",
-      opacity: "0",
+      opacity: 0,
     },
     transition: {
       duration: 0.5,
@@ -13,7 +13,7 @@ const SkillsCard = ({ name, Logo }) => {
     },
     whileInView: {
       y: 0,
-      opacity: "1",
+      opacity: 1,
     },
   };
   return (
