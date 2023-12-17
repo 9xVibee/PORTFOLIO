@@ -9,6 +9,8 @@ import Home from "./pages/home/Home";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import Skills from "./pages/Skills/Skills";
 import Projects from "./pages/Projects/Projects";
+import { FaGithub } from "react-icons/fa";
+import { IoMdLink } from "react-icons/io";
 
 const App = () => {
   useEffect(() => {
@@ -23,6 +25,15 @@ const App = () => {
       {/* Cursor */}
       <Cursor />
       <div className="circle2"></div>
+      <div className="project-circle github-circle">
+        <p>Code!</p>
+        <FaGithub />
+      </div>
+
+      <div className="project-circle go-live-circle">
+        <p>Go Live!</p>
+        <IoMdLink />
+      </div>
 
       {/* Home Page */}
       <Home />

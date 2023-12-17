@@ -4,6 +4,8 @@ export function cursorJs() {
   const coords = { x: 0, y: 0 };
   const circles = document.querySelectorAll(".circle");
   const circle2 = document.querySelectorAll(".circle2");
+  const cursor = document.querySelector(".project-circle");
+  const liveCursor = document.querySelector(".go-live-circle");
 
   circles.forEach(function (circle) {
     circle.x = 0;
@@ -48,6 +50,15 @@ export function cursorJs() {
       y: event.y - 10 + "px",
       duration: 0,
     });
+
+    gsap.to(cursor, {
+      x: event.x - 11 + "px",
+      y: event.y - 10 + "px",
+    });
+    gsap.to(liveCursor, {
+      x: event.x - 11 + "px",
+      y: event.y - 10 + "px",
+    });
   }
 
   window.addEventListener("mousemove", getCursorPosition);
@@ -86,7 +97,6 @@ export function cursorJs() {
   // hide unhide up-btn
   window.addEventListener("scroll", function () {
     if (this.window.scrollY > 200) {
-      console.log("hellow");
       gsap.to(".up-btn", {
         opacity: 1,
       });
