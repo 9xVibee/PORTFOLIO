@@ -146,7 +146,7 @@ const Projects = () => {
 
         {/* Project 2 */}
         <div className="card-container-project card-2 margin-top-card">
-          <a href="">
+          <a href="https://github.com/9xVibee/InstagramThreadCloneUsingMERNStack">
             <div className="project-img-container">
               <img src={Project2Img} alt="" />
             </div>
