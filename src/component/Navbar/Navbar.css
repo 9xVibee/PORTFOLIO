@@ -197,7 +197,7 @@ span+span {
     }
 }
 
-@media screen and (max-width:431px) {
+@media screen and (max-width:768px) {
     .bitemoji-container {
         width: 3.5rem;
         height: 3.5rem;

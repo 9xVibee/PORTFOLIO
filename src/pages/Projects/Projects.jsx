@@ -54,7 +54,7 @@ const Projects = () => {
               <img src={Project1Img} alt="" />
             </div>
             <div className="project-h1-container">
-              <h1>AdidasClone</h1>
+              <h1>Adidas Clone</h1>
               <div className="icon-container-project">
                 <img src={HtmlImg} alt="" />
                 <img src={CssImg} alt="" />

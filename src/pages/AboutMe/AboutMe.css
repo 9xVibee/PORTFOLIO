@@ -168,12 +168,32 @@ p {
 
 @media screen and (max-width:620px) {
     .right-abt-p p {
-        font-size: 1.6rem;
-        text-align: center;
+        font-size: 1.7rem;
+        text-align: left;
+    }
+
+    .right-abt {
+        padding-left: 1rem;
     }
 }
 
-@media screen and (max-width:391px) {
+@media screen and (max-width:541px) {
+    .right-abt-p p {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width:501px) {
+    .right-abt-p p {
+        font-size: 1.5rem;
+    }
+
+    .right-abt {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:460px) {
     .left-abt {
         margin-bottom: -5rem;
     }
@@ -193,12 +213,21 @@ p {
 
     .right-abt-p p {
         font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .right-abt {
+        padding-left: 2rem;
     }
 }
 
-@media screen and (max-width:335px) {
+@media screen and (max-width:372px) {
+    .right-abt {
+        padding-left: 0;
+    }
+
     .right-abt-p p {
-        text-align: left;
+        text-align: center;
     }
 }
 
