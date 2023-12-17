@@ -185,7 +185,7 @@ const AboutMe = () => {
             duration: 0.5,
           }}
         >
-          <p>Hellow I'm Abhay, a computer </p>
+          <p>Hellow I'm Abhay, a computer</p>
         </motion.div>
         <motion.div
           className="right-abt-p"
@@ -195,7 +195,7 @@ const AboutMe = () => {
             duration: 0.5,
           }}
         >
-          <p>science student based in India who </p>
+          <p>science student based in India </p>
         </motion.div>
         <motion.div
           className="right-abt-p"
@@ -205,16 +205,33 @@ const AboutMe = () => {
             duration: 0.5,
           }}
         >
-          <p>
-            enjoys building things that live on the internet. I develop
-            exceptional websites and{" "}
-          </p>
+          <p>who enjoys building things I</p>
+        </motion.div>
+        <motion.div
+          className="right-abt-p"
+          {...abtInfo}
+          transition={{
+            delay: 1.1,
+            duration: 0.5,
+          }}
+        >
+          <p>develop exceptional websites </p>
+        </motion.div>
+        <motion.div
+          className="right-abt-p"
+          {...abtInfo}
+          transition={{
+            delay: 1.2,
+            duration: 0.5,
+          }}
+        >
+          <p>and that live on the internet.</p>
         </motion.div>
         <motion.div
           className="right-abt-p last-p"
           {...abtInfo}
           transition={{
-            delay: 1.1,
+            delay: 1.3,
             duration: 0.5,
           }}
         >

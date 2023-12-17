@@ -169,12 +169,13 @@ p {
 @media screen and (max-width:620px) {
     .right-abt-p p {
         font-size: 1.6rem;
+        text-align: center;
     }
 }
 
 @media screen and (max-width:391px) {
     .left-abt {
-        margin-bottom: 1rem;
+        margin-bottom: -5rem;
     }
 
     .right-abt-nothide {
@@ -183,14 +184,43 @@ p {
 
     .right-abt-hide {
         display: flex;
-        padding-left: 7px;
+        padding-left: 0px;
     }
 
     .last-p {
-        height: 5rem;
+        height: 5.2rem;
     }
 
     .right-abt-p p {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width:335px) {
+    .right-abt-p p {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:331px) {
+    .left-abt {
+        margin-bottom: -5rem;
+    }
+
+    .right-abt-nothide {
+        display: none;
+    }
+
+    .right-abt-hide {
+        display: flex;
+        padding-left: 0px;
+    }
+
+    .last-p {
+        height: 5.2rem;
+    }
+
+    .right-abt-p p {
+        font-size: 1.7rem;
     }
 }
