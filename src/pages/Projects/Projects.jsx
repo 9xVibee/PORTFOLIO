@@ -19,7 +19,7 @@ const Projects = () => {
     CallingAnimationProjects();
   }, []);
   return (
-    <div className="projects">
+    <div className="projects" id="project">
       <div className="project-heading">
         <motion.h1
           initial={{

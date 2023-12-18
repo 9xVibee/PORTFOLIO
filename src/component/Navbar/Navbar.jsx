@@ -1,9 +1,13 @@
+/* eslint-disable react/jsx-no-target-blank */
 import { useEffect } from "react";
 import gsap from "gsap";
 import { motion } from "framer-motion";
 import Pic from "./../../assets/pin2.png";
 import "./Navbar.css";
 import { LuDownloadCloud } from "react-icons/lu";
+// import { FaCircleArrowDown } from "react-icons/fa6";
+import { MdWorkOutline } from "react-icons/md";
+import { GrContact } from "react-icons/gr";
 
 const Navbar = () => {
   useEffect(() => {
@@ -129,10 +133,29 @@ const Navbar = () => {
 
       {/* Hamburger Item */}
       <div className="ham-items-div">
-        <div className="ham-items">
-          <p>Resume</p>
-          <LuDownloadCloud />
-        </div>
+        <a href="#">
+          <div className="ham-items">
+            <p>Resume</p>
+            <LuDownloadCloud />
+          </div>
+        </a>
+        <a href="#project">
+          <div className="ham-items middle">
+            <p>Work</p>
+            <MdWorkOutline />
+          </div>
+        </a>
+        <a
+          target="_blank"
+          data-blobity-radius="10"
+          data-blobity-magnetic="false"
+          href="mailto:abpanchal951357@gmail.com"
+        >
+          <div className="ham-items last">
+            <p>Contact</p>
+            <GrContact />
+          </div>
+        </a>
       </div>
     </motion.div>
   );
