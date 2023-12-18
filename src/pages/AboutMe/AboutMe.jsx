@@ -205,7 +205,7 @@ const AboutMe = () => {
             duration: 0.5,
           }}
         >
-          <p>who enjoys building things I</p>
+          <p>who enjoys building things</p>
         </motion.div>
         <motion.div
           className="right-abt-p"
@@ -215,7 +215,7 @@ const AboutMe = () => {
             duration: 0.5,
           }}
         >
-          <p>develop exceptional websites </p>
+          <p>that live on the internet.</p>
         </motion.div>
         <motion.div
           className="right-abt-p"
@@ -225,7 +225,7 @@ const AboutMe = () => {
             duration: 0.5,
           }}
         >
-          <p>and that live on the internet.</p>
+          <p>I develop exceptional websites and</p>
         </motion.div>
         <motion.div
           className="right-abt-p last-p"

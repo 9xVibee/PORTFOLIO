@@ -8,40 +8,45 @@ import { LuDownloadCloud } from "react-icons/lu";
 // import { FaCircleArrowDown } from "react-icons/fa6";
 import { MdWorkOutline } from "react-icons/md";
 import { GrContact } from "react-icons/gr";
+import { IoMdLink } from "react-icons/io";
+import InstagramLogo from "./../../assets/instagram.png";
+import SnapChatLogo from "./../../assets/snapchat.png";
+import LinkdinLogo from "./../../assets/linkedin.png";
 
 const Navbar = () => {
   useEffect(() => {
     // Emojis
-    gsap.fromTo(
-      ".bitemoji-container",
-      {
-        x: -100,
-        opacity: 0,
-        delay: 3.8,
-        duration: 0.5,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        delay: 3.8,
-        duration: 0.5,
-      }
-    );
-    gsap.fromTo(
-      ".box",
-      {
-        x: 100,
-        opacity: 0,
-        delay: 4,
-        duration: 0.5,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        delay: 4,
-        duration: 0.5,
-      }
-    );
+    // gsap.fromTo(
+    //   ".bitemoji-container",
+    //   {
+    //     x: -100,
+    //     opacity: 0,
+    //     delay: 3.8,
+    //     duration: 0.5,
+    //   },
+    //   {
+    //     x: 0,
+    //     opacity: 1,
+    //     delay: 3.8,
+    //     duration: 0.5,
+    //   }
+    // );
+    // gsap.fromTo(
+    //   ".box",
+    //   {
+    //     x: 100,
+    //     opacity: 0,
+    //     delay: 4,
+    //     duration: 0.5,
+    //   },
+    //   {
+    //     x: 0,
+    //     opacity: 1,
+    //     delay: 4,
+    //     duration: 0.5,
+    //   }
+    // );
+
     // Hiding circle on ham
     const circle2 = document.querySelectorAll(".circle2");
     document.querySelector(".btn").addEventListener("mousemove", function () {
@@ -64,6 +69,7 @@ const Navbar = () => {
         duration: 0.1,
       });
     });
+
     // Hiding circle on ham items
     document
       .querySelector(".ham-items-div")
@@ -114,6 +120,25 @@ const Navbar = () => {
         });
       }
     });
+
+    // Social bitemoji
+    let j = 1;
+    const bitEmoji = document.querySelector(".bitemoji-container");
+    const insta = document.querySelector(".insta");
+    const snap = document.querySelector(".snap");
+    const linkdin = document.querySelector(".linkdin");
+    bitEmoji.addEventListener("click", function () {
+      if (j % 2 != 0) {
+        insta.classList.add("insta-add");
+        snap.classList.add("snap-add");
+        linkdin.classList.add("linkdin-add");
+      } else {
+        linkdin.classList.remove("linkdin-add");
+        insta.classList.remove("insta-add");
+        snap.classList.remove("snap-add");
+      }
+      j++;
+    });
   }, []);
   return (
     <motion.div className="navbar">
@@ -121,6 +146,42 @@ const Navbar = () => {
       <div className="bitemoji-container">
         <img src={Pic} alt="" />
       </div>
+
+      {/* Profile Items */}
+      {/* insta */}
+      <a
+        href="https://www.instagram.com/_abhxyy__/?hl=en"
+        target="_blank"
+        className="profile-items"
+      >
+        <div className="social-emoji-container insta">
+          <img src={InstagramLogo} alt="" className="social-img" />
+          <IoMdLink className="emoji-social-logo" />
+        </div>
+      </a>
+      
+      {/* snap */}
+      <a
+        href="https://www.snapchat.com/add/abhxyyy_19?share_id=qlstiVHZK8U&locale=en-US "
+        className="profile-items"
+      >
+        <div className="social-emoji-container snap">
+          <img src={SnapChatLogo} alt="" className="social-img" />
+          <IoMdLink className="emoji-social-logo" />
+        </div>
+      </a>
+
+      {/* linkdin */}
+      <a
+        href="https://www.linkedin.com/in/abhay-panchal-b1a912293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+        className="profile-items"
+        target="_blank"
+      >
+        <div className="social-emoji-container linkdin">
+          <img src={LinkdinLogo} alt="" className="social-img" />
+          <IoMdLink className="emoji-social-logo" />
+        </div>
+      </a>
 
       {/* Hamburger */}
       <div className="box">
