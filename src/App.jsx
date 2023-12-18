@@ -11,6 +11,7 @@ import Skills from "./pages/Skills/Skills";
 import Projects from "./pages/Projects/Projects";
 import { FaGithub } from "react-icons/fa";
 import { IoMdLink } from "react-icons/io";
+import PreLoader from "./pages/PreLoader/PreLoader";
 
 const App = () => {
   useEffect(() => {
@@ -19,6 +20,9 @@ const App = () => {
 
   return (
     <div className="container">
+      {/* PreLoader */}
+      <PreLoader />
+
       {/* Navbar */}
       <Navbar />
 

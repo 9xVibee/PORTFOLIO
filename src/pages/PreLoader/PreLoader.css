@@ -1,0 +1,49 @@
+.preloader {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: white;
+    z-index: 999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Zeyada', cursive;
+}
+
+.preloader-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.preloader h1 {
+    width: fit-content;
+    letter-spacing: 2px;
+    transform: translateY(100%);
+}
+
+@media screen and (max-width:376px) {
+    .preloader-container {
+        gap: 1rem;
+    }
+
+    .preloader h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .preloader-container {
+        gap: 0.5rem;
+    }
+
+    .preloader h1 {
+        font-size: 1.5rem;
+    }
+}

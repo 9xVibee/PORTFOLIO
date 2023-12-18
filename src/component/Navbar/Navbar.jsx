@@ -1,11 +1,43 @@
 import { useEffect } from "react";
 import gsap from "gsap";
+import { motion } from "framer-motion";
 import Pic from "./../../assets/pin2.png";
 import "./Navbar.css";
 import { LuDownloadCloud } from "react-icons/lu";
 
 const Navbar = () => {
   useEffect(() => {
+    // Emojis
+    gsap.fromTo(
+      ".bitemoji-container",
+      {
+        x: -100,
+        opacity: 0,
+        delay: 3,
+        duration: 0.5,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        delay: 3,
+        duration: 0.5,
+      }
+    );
+    gsap.fromTo(
+      ".box",
+      {
+        x: 100,
+        opacity: 0,
+        delay: 3,
+        duration: 0.5,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        delay: 3,
+        duration: 0.5,
+      }
+    );
     // Hiding circle on ham
     const circle2 = document.querySelectorAll(".circle2");
     document.querySelector(".btn").addEventListener("mousemove", function () {
@@ -80,7 +112,7 @@ const Navbar = () => {
     });
   }, []);
   return (
-    <div className="navbar">
+    <motion.div className="navbar">
       {/* profile */}
       <div className="bitemoji-container">
         <img src={Pic} alt="" />
@@ -94,6 +126,7 @@ const Navbar = () => {
           <span></span>
         </div>
       </div>
+
       {/* Hamburger Item */}
       <div className="ham-items-div">
         <div className="ham-items">
@@ -101,7 +134,7 @@ const Navbar = () => {
           <LuDownloadCloud />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

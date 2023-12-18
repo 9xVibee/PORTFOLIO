@@ -1,5 +1,5 @@
-// import { useEffect } from "react";
-// import gsap from "gsap";
+import { useEffect } from "react";
+import gsap from "gsap";
 import { motion } from "framer-motion";
 import "./Home.css";
 
@@ -18,18 +18,19 @@ const Home = () => {
       opacity: 1,
     },
   };
-  // useEffect(() => {
-  //   gsap.to(".h1-container h1", {
-  //     y: 0,
-  //     delay: 0.5,
-  //     duration: 0.5,
-  //   });
-  //   gsap.to(".name-container p, .im, .full-stack-span", {
-  //     y: 0,
-  //     delay: 0.7,
-  //     duration: 0.5,
-  //   });
-  // });
+  useEffect(() => {
+    gsap.fromTo(
+      ".home",
+      {
+        display: "none",
+        delay: 3,
+      },
+      {
+        display: "flex",
+        delay: 3,
+      }
+    );
+  });
   return (
     <div className="home" id="home">
       <div className="info-container">
@@ -47,6 +48,7 @@ const Home = () => {
               delay: 0.5,
               duration: 0.5,
             }}
+            className="hellow-h1"
           >
             Hellowww.
           </motion.h1>
