@@ -13,13 +13,13 @@ const Navbar = () => {
       {
         x: -100,
         opacity: 0,
-        delay: 3,
+        delay: 3.8,
         duration: 0.5,
       },
       {
         x: 0,
         opacity: 1,
-        delay: 3,
+        delay: 3.8,
         duration: 0.5,
       }
     );
@@ -28,13 +28,13 @@ const Navbar = () => {
       {
         x: 100,
         opacity: 0,
-        delay: 3,
+        delay: 4,
         duration: 0.5,
       },
       {
         x: 0,
         opacity: 1,
-        delay: 3,
+        delay: 4,
         duration: 0.5,
       }
     );
