@@ -16,36 +16,36 @@ import LinkdinLogo from "./../../assets/linkedin.png";
 const Navbar = () => {
   useEffect(() => {
     // Emojis
-    // gsap.fromTo(
-    //   ".bitemoji-container",
-    //   {
-    //     x: -100,
-    //     opacity: 0,
-    //     delay: 3.8,
-    //     duration: 0.5,
-    //   },
-    //   {
-    //     x: 0,
-    //     opacity: 1,
-    //     delay: 3.8,
-    //     duration: 0.5,
-    //   }
-    // );
-    // gsap.fromTo(
-    //   ".box",
-    //   {
-    //     x: 100,
-    //     opacity: 0,
-    //     delay: 4,
-    //     duration: 0.5,
-    //   },
-    //   {
-    //     x: 0,
-    //     opacity: 1,
-    //     delay: 4,
-    //     duration: 0.5,
-    //   }
-    // );
+    gsap.fromTo(
+      ".bitemoji-container",
+      {
+        x: -100,
+        opacity: 0,
+        delay: 3.8,
+        duration: 0.5,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        delay: 3.8,
+        duration: 0.5,
+      }
+    );
+    gsap.fromTo(
+      ".box",
+      {
+        x: 100,
+        opacity: 0,
+        delay: 4,
+        duration: 0.5,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        delay: 4,
+        duration: 0.5,
+      }
+    );
 
     // Hiding circle on ham
     const circle2 = document.querySelectorAll(".circle2");
@@ -159,7 +159,7 @@ const Navbar = () => {
           <IoMdLink className="emoji-social-logo" />
         </div>
       </a>
-      
+
       {/* snap */}
       <a
         href="https://www.snapchat.com/add/abhxyyy_19?share_id=qlstiVHZK8U&locale=en-US "
