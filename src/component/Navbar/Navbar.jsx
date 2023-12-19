@@ -12,6 +12,7 @@ import { IoMdLink } from "react-icons/io";
 import InstagramLogo from "./../../assets/instagram.png";
 import SnapChatLogo from "./../../assets/snapchat.png";
 import LinkdinLogo from "./../../assets/linkedin.png";
+import Resume from "./../../../Abhay_resume.pdf";
 
 const Navbar = () => {
   useEffect(() => {
@@ -194,7 +195,7 @@ const Navbar = () => {
 
       {/* Hamburger Item */}
       <div className="ham-items-div">
-        <a href="#">
+        <a href="#" download={Resume}>
           <div className="ham-items">
             <p>Resume</p>
             <LuDownloadCloud />
