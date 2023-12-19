@@ -12,6 +12,7 @@ import Projects from "./pages/Projects/Projects";
 import { FaGithub } from "react-icons/fa";
 import { IoMdLink } from "react-icons/io";
 import PreLoader from "./pages/PreLoader/PreLoader";
+import ThankYou from "./pages/ThankYou/ThankYou";
 
 const App = () => {
   useEffect(() => {
@@ -50,6 +51,9 @@ const App = () => {
 
       {/* Projects */}
       <Projects />
+
+      {/* Thank you message */}
+      <ThankYou />
 
       {/* UppArrow btn */}
       <a href="#home" className="up-btn">

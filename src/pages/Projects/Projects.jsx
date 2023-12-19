@@ -4,6 +4,7 @@ import "./Projects.css";
 import Project1Img from "./../../assets/p1.jpg";
 import Project2Img from "./../../assets/p2.jpg";
 import Project3Img from "./../../assets/p3.png";
+import Project4Img from "./../../assets/p4.png";
 import HtmlImg from "./../../assets/html.png";
 import SCImg from "./../../assets/styled-components1.png";
 import CssImg from "./../../assets/css-3.png";
@@ -316,6 +317,89 @@ const Projects = () => {
               </a>
               <a
                 href="https://react-dice-roller-game.vercel.app/"
+                className="btn-project"
+                target="_blank"
+              >
+                <IoMdLink />
+                <p>Go Live</p>
+              </a>
+            </div>
+          </a>
+        </div>
+
+        {/* Project 4 */}
+        <div className="card-container-project card-4">
+          <a href="https://react-advanced-filter.vercel.app/" target="_blank">
+            <div className="project-img-container">
+              <motion.img {...imgAnimation} src={Project4Img} alt="" />
+            </div>
+            <div className="project-h1-container">
+              <motion.h1
+                initial={{
+                  y: 32,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.5,
+                }}
+              >
+                React Advance Filter
+              </motion.h1>
+              <motion.div
+                initial={{
+                  y: 32,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.5,
+                }}
+                className="icon-container-project"
+              >
+                <img src={ReactSvg} alt="" />
+              </motion.div>
+            </div>
+            <div className="project-details">
+              <motion.p
+                initial={{
+                  y: 32,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.5,
+                }}
+              >
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Inventore tenetur facilis architecto incidunt, totam laborum
+                dolorem ipsum. Vitae fuga labore, odit, provident dolore fugiat
+                recusandae asperiores suscipit eos harum voluptatum?
+              </motion.p>
+            </div>
+            <div className="btn-container-project">
+              <a
+                href="https://github.com/9xVibee/ReactAdvancedFilter"
+                className="btn-project"
+                target="_blank"
+              >
+                <FaGithub />
+                <p>View Code</p>
+              </a>
+              <a
+                href="https://react-advanced-filter.vercel.app/"
                 className="btn-project"
                 target="_blank"
               >
