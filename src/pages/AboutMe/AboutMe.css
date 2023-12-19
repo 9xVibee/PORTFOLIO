@@ -223,12 +223,12 @@ p {
 
 @media screen and (max-width:372px) {
     .right-abt {
-        padding-left: 0;
+        padding-left: 0.2rem !important;
     }
 
-    .right-abt-p p {
+    /* .right-abt-p p {
         text-align: center;
-    }
+    } */
 }
 
 @media screen and (max-width:331px) {
