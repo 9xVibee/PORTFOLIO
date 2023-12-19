@@ -1,8 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/jsx-no-target-blank */
 import { useEffect } from "react";
 import "./Projects.css";
 import AdidasImg from "./../../assets/adidasnew.png";
-import Project1Img from "./../../assets/p1.jpg";
+// import Project1Img from "./../../assets/p1.jpg";
 import Project2Img from "./../../assets/p2.jpg";
 import Project3Img from "./../../assets/p3.png";
 import Project4Img from "./../../assets/p4.png";
@@ -155,10 +156,10 @@ const Projects = () => {
                   duration: 0.5,
                 }}
               >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Inventore tenetur facilis architecto incidunt, totam laborum
-                dolorem ipsum. Vitae fuga labore, odit, provident dolore fugiat
-                recusandae asperiores suscipit eos harum voluptatum?
+                A Meticulous recreation of the Adidas e-commerce platform, built
+                from the ground up using HTML, CSS, and JavaScript. This clone
+                captures the essence of Adidas' user interface, product
+                showcases, and navigation flow.
               </motion.p>
             </div>
             <div className="btn-container-project">
@@ -244,10 +245,10 @@ const Projects = () => {
                   duration: 0.5,
                 }}
               >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Inventore tenetur facilis architecto incidunt, totam laborum
-                dolorem ipsum. Vitae fuga labore, odit, provident dolore fugiat
-                recusandae asperiores suscipit eos harum voluptatum?
+                Developed a MERN stack-based web application mimicking
+                Instagram's thread functionality. Key features include user
+                authentication, thread creation with multiple images, real-time
+                engagement using Socket.io, and a responsive design
               </motion.p>
             </div>
             <a
@@ -318,10 +319,10 @@ const Projects = () => {
                   duration: 0.5,
                 }}
               >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Inventore tenetur facilis architecto incidunt, totam laborum
-                dolorem ipsum. Vitae fuga labore, odit, provident dolore fugiat
-                recusandae asperiores suscipit eos harum voluptatum?
+                A dynamic and interactive dice roller game crafted using
+                React.js. Players can roll virtual dice with a click, simulating
+                the thrill of a real-world dice roll. The game interface is
+                designed with intuitive controls and visual feedback.
               </motion.p>
             </div>
             <div className="btn-container-project">
@@ -401,10 +402,10 @@ const Projects = () => {
                   duration: 0.5,
                 }}
               >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Inventore tenetur facilis architecto incidunt, totam laborum
-                dolorem ipsum. Vitae fuga labore, odit, provident dolore fugiat
-                recusandae asperiores suscipit eos harum voluptatum?
+                An advanced filtering system built using React.js, designed to
+                streamline data navigation and enhance user experience. The
+                interface offers a range of filtering options, from basic search
+                queries to intricate multi-criteria selections.
               </motion.p>
             </div>
             <div className="btn-container-project">
