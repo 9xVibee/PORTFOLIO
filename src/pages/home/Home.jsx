@@ -73,11 +73,11 @@ const Home = () => {
       <div className="container2">
         <div className="box2">
           <h1 className="h1">
-            Looking for full-stack Developer? <br /> Then you have visited right
+            Looking for Full-Stack Developer? <br /> Then you have visited right
             place!
           </h1>
           <h1 className="h2">
-            Looking for full-stack Developer? Then you have visited right place!
+            Looking for Full-Stack Developer? Then you have visited right place!
           </h1>
         </div>
       </div>
