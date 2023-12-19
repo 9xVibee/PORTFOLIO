@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import { useEffect } from "react";
 import "./Projects.css";
+import AdidasImg from "./../../assets/adidasnew.png";
 import Project1Img from "./../../assets/p1.jpg";
 import Project2Img from "./../../assets/p2.jpg";
 import Project3Img from "./../../assets/p3.png";
@@ -12,6 +13,7 @@ import ReactSvg from "./../../assets/react.svg";
 import MongoDb from "./../../assets/mongodb.svg";
 import NodeJs from "./../../assets/nodejs.svg";
 import Express from "./../../assets/express.svg";
+import JavaScript from "./../../assets/js.png";
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { IoMdLink } from "react-icons/io";
@@ -68,7 +70,7 @@ const Projects = () => {
             target="_blank"
           >
             <div className="project-img-container">
-              <motion.img {...imgAnimation} src={Project1Img} alt="" />
+              <motion.img {...imgAnimation} src={AdidasImg} alt="" />
             </div>
             <div className="project-h1-container">
               <motion.h1
@@ -118,6 +120,22 @@ const Projects = () => {
                     duration: 0.5,
                   }}
                   src={CssImg}
+                  alt=""
+                />
+                <motion.img
+                  initial={{
+                    y: 32,
+                    opacity: 0,
+                  }}
+                  whileInView={{
+                    y: 0,
+                    opacity: 1,
+                  }}
+                  transition={{
+                    delay: 0.5,
+                    duration: 0.5,
+                  }}
+                  src={JavaScript}
                   alt=""
                 />
               </div>

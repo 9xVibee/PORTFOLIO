@@ -19,8 +19,8 @@
 }
 
 .thankyou-msg-container img {
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
     object-fit: cover;
     margin-left: -1rem;
     /* border: 1px solid red; */
@@ -30,7 +30,7 @@
     margin-top: 1rem;
     text-align: center;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 2px;
 }
 
@@ -53,10 +53,11 @@
     transition: all 0.3s;
 }
 
+/* 
 .connect-me-container a:hover {
     background-color: black;
     color: white;
-}
+} */
 
 .connect-me-container a p {
     width: fit-content;
