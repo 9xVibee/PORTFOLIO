@@ -180,8 +180,7 @@
 
     .box2 h1 {
         font-size: 2rem;
-        padding-left: 1rem;
-        letter-spacing: 0;
+        letter-spacing: 1px;
     }
 
     .box2 .h1 {
