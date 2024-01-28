@@ -5,18 +5,20 @@ import "./Projects.css";
 import AdidasImg from "./../../assets/adidasnew.png";
 // import Project1Img from "./../../assets/p1.jpg";
 import Project2Img from "./../../assets/p2.jpg";
-import Project3Img from "./../../assets/p3.png";
-import Project4Img from "./../../assets/p4.png";
+// import Project3Img from "./../../assets/p3.png";
+import Project4Img from "./../../assets/QuizApp.png";
 import Project5Img from "./../../assets/p5.png";
 import HtmlImg from "./../../assets/html.png";
 import TypeScript from "./../../assets/typescript.svg";
-import SCImg from "./../../assets/styled-components1.png";
+// import SCImg from "./../../assets/styled-components1.png";
 import CssImg from "./../../assets/css-3.png";
 import ReactSvg from "./../../assets/react.svg";
 import MongoDb from "./../../assets/mongodb.svg";
 import NodeJs from "./../../assets/nodejs.svg";
 import Express from "./../../assets/express.svg";
 import JavaScript from "./../../assets/js.png";
+import swiggyImg from "./../../assets/swiggy.png";
+import zustandImg from "./../../assets/zustand.png";
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { IoMdLink } from "react-icons/io";
@@ -62,10 +64,6 @@ const Projects = () => {
         </motion.h1>
       </div>
       <div className="projects-container">
-        {/* <div className="video-container">
-          <video src={AdidasVideo} autoPlay muted loop></video>
-          <div className="coverUp"></div>
-        </div> */}
         {/* Project 1 */}
         <div className="card-container-project card-1 margin-top-card always-top">
           <a
@@ -266,9 +264,9 @@ const Projects = () => {
 
         {/* Project 3 */}
         <div className="card-container-project card-3 margin-top-card">
-          <a href="https://react-dice-roller-game.vercel.app/" target="_blank">
+          <a href="https://swiggyyy.vercel.app/" target="_blank">
             <div className="project-img-container">
-              <motion.img {...imgAnimation} src={Project3Img} alt="" />
+              <motion.img {...imgAnimation} src={swiggyImg} alt="" />
             </div>
             <div className="project-h1-container">
               <motion.h1
@@ -285,7 +283,7 @@ const Projects = () => {
                   duration: 0.5,
                 }}
               >
-                Dice Roller
+                Swiggy
               </motion.h1>
               <motion.div
                 initial={{
@@ -303,7 +301,7 @@ const Projects = () => {
                 className="icon-container-project"
               >
                 <img src={ReactSvg} alt="" />
-                <img src={SCImg} alt="" />
+                <img src={zustandImg} alt="" className="zustand" />
               </motion.div>
             </div>
             <div className="project-details">
@@ -321,15 +319,15 @@ const Projects = () => {
                   duration: 0.5,
                 }}
               >
-                A dynamic and interactive dice roller game crafted using
-                React.js. Players can roll virtual dice with a click, simulating
-                the thrill of a real-world dice roll. The game interface is
-                designed with intuitive controls and visual feedback.
+                Welcome to our cutting-edge Swiggy clone built with ReactJS and
+                powered by Zustand for seamless state management. This modern
+                web application brings the convenience of online food ordering
+                and delivery to your fingertips
               </motion.p>
             </div>
             <div className="btn-container-project">
               <a
-                href="https://github.com/9xVibee/React-DiceRollerGame"
+                href="https://github.com/9xVibee/SwiggyyyClone"
                 className="btn-project"
                 target="_blank"
               >
@@ -337,7 +335,7 @@ const Projects = () => {
                 <p>View Code</p>
               </a>
               <a
-                href="https://react-dice-roller-game.vercel.app/"
+                href="https://swiggyyy.vercel.app/"
                 className="btn-project"
                 target="_blank"
               >
@@ -350,7 +348,10 @@ const Projects = () => {
 
         {/* Project 4 */}
         <div className="card-container-project card-4">
-          <a href="https://react-advanced-filter.vercel.app/" target="_blank">
+          <a
+            href="https://reacttypescriptquizgame.vercel.app//"
+            target="_blank"
+          >
             <div className="project-img-container">
               <motion.img {...imgAnimation} src={Project4Img} alt="" />
             </div>
@@ -369,7 +370,7 @@ const Projects = () => {
                   duration: 0.5,
                 }}
               >
-                React Advance Filter
+                Quiz App (Translation Based)
               </motion.h1>
               <motion.div
                 initial={{
@@ -387,6 +388,7 @@ const Projects = () => {
                 className="icon-container-project"
               >
                 <img src={ReactSvg} alt="" />
+                <img src={TypeScript} alt="" />
               </motion.div>
             </div>
             <div className="project-details">
@@ -404,15 +406,15 @@ const Projects = () => {
                   duration: 0.5,
                 }}
               >
-                An advanced filtering system built using React.js, designed to
-                streamline data navigation and enhance user experience. The
-                interface offers a range of filtering options, from basic search
-                queries to intricate multi-criteria selections.
+                mbark on a knowledge-filled journey with our state-of-the-art
+                Quiz App, meticulously crafted using ReactJS, TypeScript, and
+                powered by the efficiency of Redux Toolkit. This educational
+                platform seamlessly combines a captivating user experience
               </motion.p>
             </div>
             <div className="btn-container-project">
               <a
-                href="https://github.com/9xVibee/ReactAdvancedFilter"
+                href="https://github.com/9xVibee/ReactTypeScriptQuizGame"
                 className="btn-project"
                 target="_blank"
               >
@@ -420,7 +422,7 @@ const Projects = () => {
                 <p>View Code</p>
               </a>
               <a
-                href="https://react-advanced-filter.vercel.app/"
+                href="https://reacttypescriptquizgame.vercel.app/"
                 className="btn-project"
                 target="_blank"
               >
