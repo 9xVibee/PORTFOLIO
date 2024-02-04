@@ -38,11 +38,11 @@ const Home = () => {
           <motion.h1
             initial={{
               y: "100%",
-              opacity: 0,
+              // opacity: 0,
             }}
             whileInView={{
               y: "0%",
-              opacity: 1,
+              // opacity: 1,
             }}
             transition={{
               delay: 0.5,

@@ -28,8 +28,8 @@ export function cursorJs() {
 
       const nextCircle = circles[index + 1] || circles[0];
 
-      x += (nextCircle.x - x) * 0.4;
-      y += (nextCircle.y - y) * 0.4;
+      x += (nextCircle.x - x) * 0.5;
+      y += (nextCircle.y - y) * 0.5;
     });
 
     requestAnimationFrame(animateCircles);

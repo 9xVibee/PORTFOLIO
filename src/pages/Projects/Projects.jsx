@@ -8,12 +8,14 @@ import Project2Img from "./../../assets/p2.jpg";
 // import Project3Img from "./../../assets/p3.png";
 import Project4Img from "./../../assets/QuizApp.png";
 import Project5Img from "./../../assets/p5.png";
+import Project6Img from "./../../assets/netflix.png";
 import HtmlImg from "./../../assets/html.png";
 import TypeScript from "./../../assets/typescript.svg";
 // import SCImg from "./../../assets/styled-components1.png";
 import CssImg from "./../../assets/css-3.png";
 import ReactSvg from "./../../assets/react.svg";
 import MongoDb from "./../../assets/mongodb.svg";
+import TailwindCss from "./../../assets/tailwindcss.svg";
 import NodeJs from "./../../assets/nodejs.svg";
 import Express from "./../../assets/express.svg";
 import JavaScript from "./../../assets/js.png";
@@ -507,6 +509,90 @@ const Projects = () => {
               </a>
               <a
                 href="https://movieratingts.vercel.app/"
+                className="btn-project"
+                target="_blank"
+              >
+                <IoMdLink />
+                <p>Go Live</p>
+              </a>
+            </div>
+          </a>
+        </div>
+
+        {/* Project 6 */}
+        <div className="card-container-project card-6">
+          <a href="https://netflix-gpt-red.vercel.app/" target="_blank">
+            <div className="project-img-container">
+              <motion.img {...imgAnimation} src={Project6Img} alt="" />
+            </div>
+            <div className="project-h1-container">
+              <motion.h1
+                initial={{
+                  y: 32,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.5,
+                }}
+              >
+                Netflix
+              </motion.h1>
+              <motion.div
+                initial={{
+                  y: 32,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.5,
+                }}
+                className="icon-container-project"
+              >
+                <img src={ReactSvg} alt="" />
+                <img src={TailwindCss} alt="" />
+              </motion.div>
+            </div>
+            <div className="project-details">
+              <motion.p
+                initial={{
+                  y: 32,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.5,
+                }}
+              >
+                Our Movie Rating WebApp is a user-friendly platform designed to
+                help movie enthusiasts discover, rate, and review films.
+                Developed using ReactJS and TypeScript, the application offers a
+                seamless user experience.
+              </motion.p>
+            </div>
+            <div className="btn-container-project">
+              <a
+                href="https://github.com/9xVibee/NetflixGPT"
+                className="btn-project"
+                target="_blank"
+              >
+                <FaGithub />
+                <p>View Code</p>
+              </a>
+              <a
+                href="https://netflix-gpt-red.vercel.app/"
                 className="btn-project"
                 target="_blank"
               >

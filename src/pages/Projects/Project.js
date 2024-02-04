@@ -136,4 +136,27 @@ export const CallingAnimationProjects = () => {
       opacity: 1,
     });
   });
+
+  const card6 = document.querySelector(".card-6");
+  card6.addEventListener("mousemove", function () {
+    gsap.to(liveCursor, {
+      scale: 1,
+    });
+    gsap.to(".circle", {
+      opacity: 0,
+    });
+  });
+  card6.addEventListener("mouseenter", function () {
+    gsap.to(liveCursor, {
+      scale: 1,
+    });
+  });
+  card6.addEventListener("mouseleave", function () {
+    gsap.to(liveCursor, {
+      scale: 0,
+    });
+    gsap.to(".circle", {
+      opacity: 1,
+    });
+  });
 };
