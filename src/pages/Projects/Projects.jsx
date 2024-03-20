@@ -9,6 +9,8 @@ import Project2Img from "./../../assets/p2.jpg";
 import Project4Img from "./../../assets/QuizApp.png";
 import Project5Img from "./../../assets/p5.png";
 import Project6Img from "./../../assets/netflix.png";
+import Project0Img from "./../../assets/jotion.png";
+
 import HtmlImg from "./../../assets/html.png";
 import TypeScript from "./../../assets/typescript.svg";
 // import SCImg from "./../../assets/styled-components1.png";
@@ -21,6 +23,7 @@ import Express from "./../../assets/express.svg";
 import JavaScript from "./../../assets/js.png";
 import swiggyImg from "./../../assets/swiggy.png";
 import zustandImg from "./../../assets/zustand.png";
+import NextJs from "./../../assets/next.js.svg";
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { IoMdLink } from "react-icons/io";
@@ -67,7 +70,107 @@ const Projects = () => {
       </div>
       <div className="projects-container">
         {/* Project 1 */}
-        <div className="card-container-project card-1 margin-top-card always-top">
+        <div className="card-container-project card-0 margin-top-card always-top">
+          <a href="https://jotion-abhay.vercel.app/" target="_blank">
+            <div className="project-img-container">
+              <motion.img {...imgAnimation} src={Project0Img} alt="" />
+            </div>
+            <div className="project-h1-container">
+              <motion.h1
+                initial={{
+                  y: 32,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.5,
+                }}
+              >
+                Jotion
+              </motion.h1>
+              <div className="icon-container-project">
+                <motion.img
+                  initial={{
+                    y: 32,
+                    opacity: 0,
+                  }}
+                  whileInView={{
+                    y: 0,
+                    opacity: 1,
+                  }}
+                  transition={{
+                    delay: 0.5,
+                    duration: 0.5,
+                  }}
+                  src={NextJs}
+                  alt=""
+                />
+                <motion.img
+                  initial={{
+                    y: 32,
+                    opacity: 0,
+                  }}
+                  whileInView={{
+                    y: 0,
+                    opacity: 1,
+                  }}
+                  transition={{
+                    delay: 0.5,
+                    duration: 0.5,
+                  }}
+                  src={TailwindCss}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="project-details">
+              <motion.p
+                initial={{
+                  y: 32,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.5,
+                }}
+              >
+                Dive deep into the world of efficient data management and
+                customizable workflows, all powered by the latest in web
+                technology. Imagine experiencing the power of real-time
+                collaboration, dynamic content organization{" "}
+              </motion.p>
+            </div>
+            <div className="btn-container-project">
+              <a
+                href="https://github.com/9xVibee/Notion-Clone"
+                className="btn-project"
+                target="_blank"
+              >
+                <FaGithub />
+                <p>View Code</p>
+              </a>
+              <a
+                href="https://jotion-abhay.vercel.app/"
+                className="btn-project"
+                target="_blank"
+              >
+                <IoMdLink />
+                <p>Go Live</p>
+              </a>
+            </div>
+          </a>
+        </div>
+
+        {/* Project 2 */}
+        <div className="card-container-project card-1 margin-top-card">
           <a
             href="https://9xvibee.github.io/AdidasCloneWebsite/"
             target="_blank"
@@ -185,7 +288,7 @@ const Projects = () => {
           </a>
         </div>
 
-        {/* Project 2 */}
+        {/* Project 3 */}
         <div className="card-container-project card-2 margin-top-card">
           <a
             href="https://github.com/9xVibee/InstagramThreadCloneUsingMERNStack"
@@ -264,8 +367,8 @@ const Projects = () => {
           </a>
         </div>
 
-        {/* Project 3 */}
-        <div className="card-container-project card-3 margin-top-card">
+        {/* Project 4 */}
+        <div className="card-container-project card-3">
           <a href="https://swiggyyy.vercel.app/" target="_blank">
             <div className="project-img-container">
               <motion.img {...imgAnimation} src={swiggyImg} alt="" />
@@ -348,7 +451,7 @@ const Projects = () => {
           </a>
         </div>
 
-        {/* Project 4 */}
+        {/* Project 5*/}
         <div className="card-container-project card-4">
           <a
             href="https://reacttypescriptquizgame.vercel.app//"
@@ -435,7 +538,7 @@ const Projects = () => {
           </a>
         </div>
 
-        {/* Project 5 */}
+        {/* Project 6 */}
         <div className="card-container-project card-5">
           <a href="https://movieratingts.vercel.app/" target="_blank">
             <div className="project-img-container">
@@ -519,7 +622,7 @@ const Projects = () => {
           </a>
         </div>
 
-        {/* Project 6 */}
+        {/* Project 7 */}
         <div className="card-container-project card-6">
           <a href="https://netflix-gpt-red.vercel.app/" target="_blank">
             <div className="project-img-container">
